@@ -42,7 +42,7 @@ class App extends Component {
     this.setState({
       players: this.state.players.filter((player, index) => {
         if (index != playerIndex) {
-          return { ...player, player };
+          return player;
         }
       })
     })
